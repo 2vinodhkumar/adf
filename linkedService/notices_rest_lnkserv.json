@@ -1,0 +1,12 @@
+{
+	"name": "notices_rest_lnkserv",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://tenders.guru/api/es/notices",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
