@@ -1,0 +1,24 @@
+{
+	"name": "notices_rest_api",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "notices_rest_lnkserv",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"page": {
+				"type": "Int",
+				"defaultValue": 1
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@concat('tenders?page=',string(dataset().page))",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}

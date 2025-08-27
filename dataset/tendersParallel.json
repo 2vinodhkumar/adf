@@ -1,0 +1,20 @@
+{
+	"name": "tendersParallel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1_Tenders",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "page_@{item()}.json",
+				"folderPath": "td",
+				"container": "tendersdd"
+			}
+		},
+		"schema": {}
+	}
+}
